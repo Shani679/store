@@ -12,9 +12,7 @@ img{
     margin: auto;
     transition:height 0.5s linear;
 }
-img:hover{
-	height: 250px;
-}
+
 body{
 	background-image: url("http://www.giftalove.com/blog/wp-content/uploads/2016/02/online-gifts-e1455541024134.jpg");
 	background-size: cover;
