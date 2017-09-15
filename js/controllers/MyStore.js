@@ -26,7 +26,6 @@ app.controller('MyStore', ($scope,$http)=>{
 		};
 	}
 	$scope.filterByGender=(value)=>{
-		debugger;
 		$scope.genderValue=value;
 		$scope.dataToShow=filterBy($scope.budgetValue, filterByGender, filterByBudget);
 		$scope.notFound=false;

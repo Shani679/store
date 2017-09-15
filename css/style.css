@@ -36,6 +36,27 @@ body{
 	padding-left: 10px;
 	border-top: 1px solid gray;
 }
+@media (max-width: 767px){
+	.products-container{
+		height: 470px !important;
+		padding-right: 0px;
+		padding-left: 0px;
+		overflow-x:hidden;
+	}
+	.container{
+		width: 90% !important;
+	}
+	.card{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.card-block{
+		width: 90%;
+		margin-right: 0px !important;
+		padding-left: 20px;
+	}
+	
+}
 .col-sm-2{
 	margin-top: 5px;
 	margin-bottom: 5px;
