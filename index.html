@@ -38,7 +38,7 @@
       <div class="products-container">
         <div class="row">
           <div class="card col-xs-12 col-sm-6 col-md-6 col-lg-4" ng-repeat="row in dataToShow">
-            <img class="card-img-top" src="{{row.ProductImage}}">
+            <img class="card-img-top" ng-src="{{row.ProductImage}}" on-error-src="https://www.pasdelacasa.com/media/uploads/62B9z0lk/bar-img-unavailable.png">
             <div class="card-block">
                 <p style="text-align:center" class="card-title">{{row.storeName}}</p>
                 <p style="text-align:center" class="card-text">{{row.ProductTitle}}</p>
