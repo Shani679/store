@@ -20,6 +20,7 @@
       <div class="col-sm-2 wellcome">Wellcome!</div>
       <div class="col-sm-2">
         <select class="form-control" ng-change="filterByBudget(price.Value)" ng-model="price.Value">
+          <option value="" disabled selected>Filter By Price</option>
           <option value="0-{{filterBudget[$index+0].Value}}">up to {{filterBudget[$index+0].DisplayText}}</option>
           <option ng-repeat="price in filterBudget" value="{{price.Value}}-{{filterBudget[$index+1].Value}}" ng-if="price.Value!=9999 && price.Value!=100">{{price.DisplayText}} - {{filterBudget[$index+1].DisplayText}}</option>
           <option value="$100+">$100+</option>
@@ -27,7 +28,8 @@
         </select>
       </div>
       <div class="col-sm-2">
-        <select class="form-control" ng-change="filterByGender(row.Value)" ng-model="row.Value">      
+        <select class="form-control" ng-change="filterByGender(row.Value)" ng-model="row.Value">  
+          <option value="" disabled selected>Filter By Gender</option>
           <option ng-repeat="row in filterGender" value={{row.Value}}>{{row.DisplayText}}</option>
           <option value="both">BOTH</option>
         </select>
